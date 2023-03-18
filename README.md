@@ -36,6 +36,15 @@ npm install
 ### Running the App
 
 To run the app in the browser, use the following command:
-´´
+``
 ionic serve
-´´
+``
+To run the app on Android or iOS, follow the instructions in the Ionic documentation: [Previewing your app](https://ionicframework.com/docs/developing/previewing).
+
+## Contributing
+
+Contributions are welcome! Please read our [contributing guidelines](./CONTRIBUTING.md) for details on how to contribute to this project.
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
