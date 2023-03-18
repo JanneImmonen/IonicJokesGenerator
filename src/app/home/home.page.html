@@ -1,20 +1,23 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Jokes</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card *ngIf="joke">
+    <ion-card-header>
+      <ion-card-title>{{ joke.category }}</ion-card-title>
+      <ion-card-subtitle>{{ joke.type }}</ion-card-subtitle>
+    </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-card-content>
+      <div *ngIf="joke.type === 'single'">{{ joke.joke }}</div>
+      <div *ngIf="joke.type === 'twopart'">
+        <p>{{ joke.setup }}</p>
+        <p><strong>{{ joke.delivery }}</strong></p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="block" (click)="fetchData()">Get another joke</ion-button>
 </ion-content>
