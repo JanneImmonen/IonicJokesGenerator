@@ -2,8 +2,6 @@
 
 This is a mobile application built with Ionic 6 and Angular that fetches and displays programming jokes from the [JokeAPI](https://jokeapi.dev/).
 
-![Ionic 6 Jokes App Screenshot](./screenshot.png)
-
 ## Features
 
 - Fetches jokes from JokeAPI
@@ -26,3 +24,16 @@ Follow these steps to set up and run the Ionic 6 Jokes App:
 ``
 git clone https://github.com/JanneImmonen/IonicJokesGenerator.git
 ``
+2. Navigate to the project folder:
+``
+cd IonicJokesGenerator
+``
+3. Install the required dependencies:
+``
+npm install
+``
+
+### Running the App
+
+To run the app in the browser, use the following command:
+
