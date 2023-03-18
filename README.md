@@ -36,4 +36,6 @@ npm install
 ### Running the App
 
 To run the app in the browser, use the following command:
-
+´´
+ionic serve
+´´
